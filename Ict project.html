@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spice Street</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fffaf4;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .navbar-brand span {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffa500;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1400&q=80') no-repeat center center;
+      background-size: cover;
+      color: #ffa500;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p i {
+      margin-right: 8px;
+    }
+
+    .menu-section {
+      padding: 50px 15px;
+    }
+
+    .menu-section h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 30px;
+    }
+
+    .card img {
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .contact-section {
+      background-color: #fef6ef;
+      padding: 50px 20px;
+    }
+
+    .contact-section h2 i,
+    .menu-section h2 i {
+      margin-right: 10px;
+    }
+
+    footer {
+      background-color: #d35400;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    i.fas, i.far, i.fab {
+      font-size: 1.1rem;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Logo" />
+      <span > The Spice Street</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to the Spice Street</h1>
+    <p><i class="fas fa-utensils"></i>Delicious Meals Made with Love</p>
+  </div>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section text-center">
+    <h2><i class="fas fa-pizza-slice text-warning"></i>Our Menu</h2>
+    <div class="container">
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/southern-fiery-paneer.2016b6a53c922daa654e3ae70867ee2a.1.jpg" class="card-img-top" alt="Pizza" />
+            <div class="card-body">
+              <h5 class="card-title">Tandoori Pizza</h5>
+              <p class="card-text">Classic cheesy goodness with basil.</p>
+              <p><strong>2999 Rs/-</strong></p>
+              <a href="#" class="btn btn-warning">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Burger" />
+            <div class="card-body">
+              <h5 class="card-title">Beef Cheezy Burger</h5>
+              <p class="card-text">Juicy beef patty with fresh toppings.</p>
+              <p><strong>700 Rs/-</strong></p>
+              <a href="#" class="btn btn-warning">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://foodfusion.com/wp-content/uploads/2021/01/PH5S6946.jpg" class="card-img-top" alt="Dessert" />
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Lava Cake</h5>
+              <p class="card-text">Warm, gooey, and sweet dessert delight.</p>
+              <p><strong>1199 Rs/-</strong></p>
+              <a href="#" class="btn btn-warning">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container text-center">
+      <h2><i class="fas fa-phone-alt text-dark"></i>Contact Us</h2>
+      <p class="mb-4">We'd love to hear from you! Get in touch:</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-start">
+          <p><strong><i class="fas fa-envelope text-danger me-2"></i>Email:</strong> asadullahkhan7969@gmail.com</p>
+          <p><strong><i class="fas fa-phone text-success me-2"></i>Phone:</strong> +92 336 2373748</p>
+          <p><strong><i class="fas fa-map-marker-alt text-primary me-2"></i>Address:</strong> Shop# 5, Street 10, PIB Colony, Karachi, Pakistan</p>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 The Spice Street. Designed by Asadullah Khan & Bhooralal.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
